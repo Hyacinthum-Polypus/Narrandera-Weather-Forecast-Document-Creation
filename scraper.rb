@@ -1,6 +1,5 @@
 require 'Nokogiri'
 require 'open-uri'
-require 'active_support/core_ext/hash'
 
 def FixImages(body, url)
   return body = body.gsub(/src../, " src=\"#{url}")
