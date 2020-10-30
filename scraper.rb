@@ -5,4 +5,5 @@ url = 'https://www.eldersweather.com.au/local-forecast/nsw/narrandera'
 html = URI.open(url)
 doc = Nokogiri::HTML(html)
 
-puts doc
+sevenDayForecast = doc.css("li.seven-day-forecast.full")
+sunRiseSunSet = doc.css("li.sunrise-sunset.full")
