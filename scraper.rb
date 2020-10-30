@@ -19,4 +19,4 @@ content = FixImages(content, "https://www.eldersweather.com.au")
 
 puts content
 
-File.open("Forecast.html", "w") { |f| f.write "#{content}"}
+File.open("#{Dir.home}/Desktop/Forecast.html", "w") { |f| f.write "#{content}"}
